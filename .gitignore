@@ -1,0 +1,7 @@
+# Ignore all files starting with .
+.*
+# Don't commit node modules
+node_modules
+# Un-ignore .gitignore and custom config files for services
+!/.gitignore
+!/.travis.yml
