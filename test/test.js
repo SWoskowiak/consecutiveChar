@@ -42,6 +42,10 @@ describe('FindConsecutive', () => {
     it('Should match entire string if entire string matches', () => {
       expect(FC.find('hghhhgghghhgggg', 'hg')).to.be.an('array').with.length.of(1);
     });
+
+    it('Should match nothing when no matches found', () => {
+      expect(FC.find('hghhhgghghhgggg', 'u')).to.be.an('array').with.length.of(0);
+    });
   });
 
 });
